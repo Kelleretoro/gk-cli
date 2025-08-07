@@ -252,3 +252,4 @@ Fundé Keller en 2017 como un Stock Fotográfico que captura la esencia de los l
 <div align="center">
   <img alt="Letrero Keller" src="https://raw.githubusercontent.com/Kelleretoro/ssh-log-cli/main/assets/letrero.jpg" width="320"/>
 </div>
+🚀 Testing release attestations - miércoles,  6 de agosto de 2025, 21:09:13 CST
