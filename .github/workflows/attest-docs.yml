@@ -1,0 +1,34 @@
+name: Attest CLI Documentation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.md'
+      - 'LICENSE'
+      - 'CONTRIBUTING.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+  attestations: write
+
+jobs:
+  attest-docs:
+    name: Attest GitKraken CLI Docs
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Attest documentation files
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: |
+            README.md
+            keller-branding-report.md
+            keller-branding-report-puro.md
+            LICENSE
+            CONTRIBUTING.md
